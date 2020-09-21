@@ -68,6 +68,12 @@ export default class Home extends Component {
                     </>
                 ) : (
                     <>
+                        <button onClick={() => {
+                            this.setState({
+                                marcas: true,
+                                modelos: false
+                            })
+                        }} type="submit">voltar</button>
                         <Text
                             align={'center'}
                             size={35}
